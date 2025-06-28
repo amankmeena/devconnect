@@ -44,9 +44,16 @@ Open [http://localhost:3000](http://localhost:3000) to view the site.
 
 The contact page includes an FAQ section with toggle functionality. See [`app/contact/page.tsx`](app/contact/page.tsx) for implementation.
 
-## Deployment
+## Performance & Responsiveness
 
-Deploy easily on [Vercel](https://vercel.com/) or any platform supporting Next.js.
+- **Image Optimization:**  
+  > ⚠️ Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider.  
+  See: [Next.js Image Optimization](https://nextjs.org/docs/messages/no-img-element)
+
+  Currently, some images use the standard `<img>` tag. In future updates, these will be migrated to the Next.js `<Image />` component for better performance and automatic optimization.
+
+- **Responsiveness:**  
+  The project already uses Tailwind CSS for a responsive layout. Further improvements and testing for responsiveness across all devices are planned for future releases.
 
 ## License
 

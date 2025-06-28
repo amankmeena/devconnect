@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
@@ -8,10 +9,10 @@ export default function Footer() {
 
         {/* Nav Links */}
         <nav className="flex flex-col gap-4 text-body">
-          <a href="/" className="hover:text-hover transition">Home</a>
-          <a href="/about" className="hover:text-hover transition">About</a>
-          <a href="/projects" className="hover:text-hover transition">Projects</a>
-          <a href="/contact" className="hover:text-hover transition">Contact</a>
+          <Link href="/" className="hover:text-hover transition">Home</Link>
+          <Link href="/about" className="hover:text-hover transition">About</Link>
+          <Link href="/projects" className="hover:text-hover transition">Projects</Link>
+          <Link href="/contact" className="hover:text-hover transition">Contact</Link>
         </nav>
 
         {/* Name & Copyright */}
@@ -21,15 +22,15 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="flex gap-4 text-body">
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-hover transition">
+          <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-hover transition">
             <FaGithub />
-          </a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:text-hover transition">
+          </Link>
+          <Link href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:text-hover transition">
             <FaLinkedin />
-          </a>
-          <a href="mailto:you@example.com" className="hover:text-hover transition">
+          </Link>
+          <Link href="mailto:you@example.com" className="hover:text-hover transition">
             <FaEnvelope />
-          </a>
+          </Link>
         </div>
       </div>
     </footer >

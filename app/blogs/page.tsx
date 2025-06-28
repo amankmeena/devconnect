@@ -42,7 +42,7 @@ export default function Blogs() {
                 </div>
                 <div className="posts-grid grid gap-7 mb-11 grid-cols-[repeat(auto-fit,minmax(320px,1fr))]">
                     {
-                        blogs.map((blog, index) => (
+                        blogs.map((blog) => (
                             /* <!-- Post --> */
                             <div key={blog.id} className="post-card bg-card rounded-[13px] shadow-[0_2px_10px_rgba(0,0,0,0.13)] overflow-hidden flex flex-col min-h-[310px] relative border border-border">
                                 {/* <img className="post-img w-full h-[124px] object-cover bg-card block" src={blog.image} alt={blog.alt} /> */}

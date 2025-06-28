@@ -32,7 +32,7 @@ export default function Projects() {
         <div className="grid gap-7 grid-cols-[repeat(auto-fit,minmax(270px,1fr))] projects-grid">
           {/* <!-- Project cards --> */}
           {
-            projects.map((project, idx) => (
+            projects.map((project) => (
               <div key={project.id} className="bg-card rounded-[5px] shadow-(--shadow) overflow-hidden border border-border flex flex-col h-full card">
                 {/* <img
                   className="w-full h-[140px] object-cover bg-(--panel-bg)"
@@ -77,7 +77,7 @@ export default function Projects() {
         </div>
         <div className="bg-(--panel-bg) rounded-[10px] py-9 px-5 text-center mx-auto mt-12 max-w-[800px] border border-border cta-section">
           <h3 className="text-h2 font-bold text-white mb-3">Ready to Build Something Amazing?</h3>
-          <p className="text-muted mb-4.5">Whether you have a groundbreaking idea or need expert development for your next project, I'm here to help bring your vision to life.</p>
+          <p className="text-muted mb-4.5">Whether you have a groundbreaking idea or need expert development for your next project, I&#39;m here to help bring your vision to life.</p>
           <Link href="/contact" className="bg-accent text-white border-0 py-3 px-7 rounded-[7px] font-bold text-body cursor-pointer transition-colors duration-200 hover:bg-hover primary-btn">Get In Touch</Link>
         </div>
       </section>

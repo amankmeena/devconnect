@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link';
-import { FaGithub, FaLinkedin, FaTwitter, FaFileDownload } from "react-icons/fa";
+// import { FaGithub, FaLinkedin, FaTwitter, FaFileDownload } from "react-icons/fa";
+import { FaFileDownload } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import "../styles/globals.css";
@@ -19,7 +20,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="max-w-[1200px] mx-auto px-6 sm:px-2 flex flex-wrap items-center justify-between py-16 pb-8 min-h-[420px] max-[900px]:flex-col max-[900px]:gap-10" id="home">
           <div className="flex-1 min-w-[320px] max-w-[520px]">
-            <p className="text-muted mb-2 text-body">Hello, I'm</p>
+            <p className="text-muted mb-2 text-body">Hello, I&#39;m</p>
             <h1 className="text-h1 font-extrabold mb-2 leading-tight">
               Aman Meena<br />
               <span className="text-accent inline">Full Stack Web<br />Developer</span>

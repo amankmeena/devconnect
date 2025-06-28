@@ -50,7 +50,7 @@ export default function Contact() {
                 <div className="relative z-[1]  hero-content">
                     <div className="text-5xl font-extrabold mb-3 text-white tracking-[.01em] hero-title">Innovate. Transform. Connect.</div>
                     <div className="text-body text-muted mb-0 max-w-[620px] mx-auto hero-subtitle">
-                        We build the future of AI with you. Let's discuss your next breakthrough project.
+                        We build the future of AI with you. Let&#39;s discuss your next breakthrough project.
                     </div>
                 </div>
             </section>
@@ -107,7 +107,7 @@ export default function Contact() {
                 <div className="text-center text-h2 font-bold mb-7 mt-0 faq-title">Frequently Asked Questions</div>
                 <div className="bg-none rounded-[12px] p-0 m-0 border-0 faq-list">
                     {
-                        faqs.map((faq, idx) => (
+                        faqs.map((faq) => (
                             <div key={faq.id} className="border-b border-border p-0 m-0 faq-item">
                                 <button className="text-white text-h3 font-semibold py-5 pr-2 w-full text-left bg-none border-0 cursor-pointer outline-none transition-colors duration-200 hover:text-accent faq-question" onClick={() => toggleFAQAnswer(faq.id)} >{faq.question}</button>
                                 <div className={`text-muted text-body pb-4.5 faq-answer${(faqAnswerDisplay === faq.id) ? " block" : " hidden"}`}>{faq.answer}</div>

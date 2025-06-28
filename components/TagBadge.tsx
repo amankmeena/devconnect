@@ -44,6 +44,7 @@ export const TagBadge = ({ tag }: Props) => {
                         break;
                     }
                 } catch (e) {
+                    console.log(e);
                     continue;
                 }
             }

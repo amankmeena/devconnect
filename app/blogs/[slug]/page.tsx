@@ -7,9 +7,13 @@ export async function generateStaticParams() {
     return blogs.map((blog) => ({
         slug: blog.slug,
     }));
-}
+};
 
-export default async function BlogPage({ params }: { params: { slug: string } }) {
+type PageProps = {
+  params: Promise<{ slug: string }>;
+};
+
+export default async function BlogPage({ params }: PageProps) {
 
     const { slug } = await params;
     const blog = blogs.find((p) => p.slug === slug);
@@ -18,7 +22,7 @@ export default async function BlogPage({ params }: { params: { slug: string } })
         notFound(); // Triggers Next.js 404
     }
 
-    const { id, title, description, image, alt, tag, author, date, content } = blog;
+    const { id, title, description, image, alt, author, date, content } = blog;
 
     return (
         <>
