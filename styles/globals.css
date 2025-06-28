@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #0a0a0a;
+  --color-card: #18181b;
+  --color-border: #27272a;
+  --color-muted: #a1a1aa;
+  --color-accent: #7b61ff;
+  --color-hover: #5a43c4;
+
+  /* Vibrant Cyan (fresh, energetic) */
+  /* --color-accent: #22d3ee;
+  --color-hover: #006071; */
+
+  --text-h1: 2.5rem;
+  --text-h2: 2rem;
+  --text-h3: 1.25rem;
+  --text-body: 1.1rem;
+  --text-tag: 0.9rem;
+
+  --panel-bg: #191820;
+  --icon-bg: #23232b;
+
+  --input-bg: #232136;
+  --input-border: #35344a;
+
+  --radius: 12px;
+  --shadow: 0 2px 16px rgba(0, 0, 0, 0.16);
+
+  --font-sans: "sans-serif";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer utilities {
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-clamp: 3;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --text-h1: 2.5rem;
+    --text-h2: 2rem;
+    --text-h3: 1.75rem;
+    --text-body: 1rem;
+    --text-tag: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --text-h1: 2rem;
+    --text-h2: 1.75rem;
+    --text-h3: 1.5rem;
+    --text-body: 0.95rem;
+    --text-tag: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --text-h1: 1.75rem;
+    --text-h2: 1.5rem;
+    --text-h3: 1.25rem;
+    --text-body: 0.875rem;
+    --text-tag: 0.7rem;
+  }
+}
+
+/* .project-tag-icon {
+  transition: transform 2s ease;
+}
+
+.project-tag-icon:hover {
+  transform: translate3d(-200px, 200px, 50px) scale(5) rotate(360deg);
+} */
+
+/* @keyframes tagIconSpin {
+  0% {
+    transform: none;
+  }
+  100% {
+    transform: translate3d(-200px, 200px, 50px) scale(5) rotate(360deg);
+  }
+}
+
+.project-tag-icon:hover {
+  animation: tagIconSpin 2s cubic-bezier(0.4, 0, 0.2, 1);
+  animation-fill-mode: forwards;
+} */

@@ -1,0 +1,47 @@
+
+@media (max-width: 1000px) {
+    .main-container {
+        max-width: 100vw;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .right-col {
+        flex-direction: row;
+        gap: 18px;
+    }
+
+    .arch-card,
+    .screenshots-card {
+        min-width: 0;
+        flex: 1;
+    }
+}
+
+@media (max-width: 700px) {
+    .main-container {
+        padding: 18px 4px 0 4px;
+    }
+
+    .title-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .action-buttons {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .arch-card,
+    .screenshots-card,
+    .demo-card,
+    .card,
+    .tech-card {
+        padding: 12px 6px 12px 8px;
+    }
+}

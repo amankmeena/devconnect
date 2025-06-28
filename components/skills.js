@@ -1,0 +1,50 @@
+const skills = {
+    "Frontend Expertise": [
+        "React.js",
+        "Next.js",
+        "TypeScript",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Redux",
+        "jQuery",
+        "PUG",
+        // "Responsive Design",
+        // "UI/UX Principles",
+    ],
+    "Backend Proficiency": [
+        "Node.js",
+        "Express.js",
+        "Django",
+        "Flask",
+        "FastAPI",
+        "PHP",
+        "REST APIs",
+        "Socket.io",
+        "MongoDB",
+        "MySQL",
+        "PostgreSQL",
+        "Firebase", // (Auth & DB)"
+        // "Role-Based Access Control (RBAC)",
+    ],
+    "Tools & Technologies": [
+        "Git & GitHub",
+        "Docker",
+        "Kubernetes",
+        "Postman",
+        "XAMPP",
+        "GraphQL",
+        "Visual Studio Code",
+        // "MATLAB / Octave",
+        // "FPDF / FPDI",
+        // "Cronjob",
+        "WordPress",
+        "Figma",
+        // "Firebase",
+        // "OVITO",
+    ]
+};
+
+export default skills;

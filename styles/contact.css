@@ -1,0 +1,35 @@
+
+@media (max-width: 1100px) {
+    .contact-section {
+        flex-direction: column;
+        gap: 24px;
+        align-items: stretch;
+    }
+
+    .panel {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .hero {
+        padding: 36px 0 28px 0;
+    }
+
+    .panel {
+        padding: 18px 6px 18px 8px;
+    }
+
+    .faq-title {
+        font-size: 1.2rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+        padding: 14px 4px 14px 0;
+    }
+
+    .connect-section {
+        margin: 28px 0 0 0;
+    }
+}
