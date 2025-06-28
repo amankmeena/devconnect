@@ -2,6 +2,14 @@
 
 This is a modern [Next.js](https://nextjs.org) portfolio project for Aman Meena, built with TypeScript, Tailwind CSS, and a modular component structure. It showcases projects, blogs, testimonials, and a contact form.
 
+## 🚀 Deployment
+
+✅ This project is deployed using **Vercel** for seamless CI/CD from GitHub.
+
+🔗 **Live Demo**: [View Site](https://devconnect-teal.vercel.app/)
+
+📦 **Deployment Platform**: Vercel (connected to `main` branch)
+
 ## Features
 
 - **Project Portfolio:** Browse detailed project cards with tech tags, screenshots, and planned enhancements.
@@ -55,9 +63,16 @@ The contact page includes an FAQ section with toggle functionality. See [`app/co
 - **Responsiveness:**  
   The project already uses Tailwind CSS for a responsive layout. Further improvements and testing for responsiveness across all devices are planned for future releases.
 
+## Disclaimer
+
+- **Demo Content:**  
+  Some blogs, projects, and testimonials are sample/demo entries included for UI demonstration purposes only. They do not represent real clients or actual work.
+- **Contact Form:**  
+  The contact form is currently a work in progress and may not send messages yet. Future updates will enable full functionality.
+
 ## License
 
 This project is for personal portfolio use. Feel free to fork and adapt for your own portfolio.
 
 ---
-© {Current Year} Aman Meena. All rights
+© 2025 Aman Meena. All rights
