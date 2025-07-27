@@ -3,9 +3,9 @@ import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
 
-  const urlGithub = `https://github.com/${process.env.GITHUB_PROFILE_ENDPOINT}`;
-  const urlLinkedin = `https://www.linkedin.com/in/${process.env.LINKEDIN_PROFILE_ENDPOINT}`;
-  const urlEmail = `mailto:${process.env.PERSONAL_EMAIL}`;
+  const urlGithub = `https://github.com/${process.env.NEXT_PUBLIC_GITHUB_PROFILE_ENDPOINT}`;
+  const urlLinkedin = `https://www.linkedin.com/in/${process.env.NEXT_PUBLIC_LINKEDIN_PROFILE_ENDPOINT}`;
+  const urlEmail = `mailto:${process.env.NEXT_PUBLIC_PERSONAL_EMAIL}`;
 
   return (
     /* Footer */

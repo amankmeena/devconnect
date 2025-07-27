@@ -40,10 +40,10 @@ export default function Contact() {
     const [notification, setNotification] = useState<{ message: string; type: "success" | "error" | null }>({ message: "", type: null });
     const [contactFormData, setContactFormData] = useState({ name: '', email: '', subject: '', message: '' });
 
-    const urlGithub = `https://github.com/${process.env.GITHUB_PROFILE_ENDPOINT}`;
-    const urlLinkedin = `https://www.linkedin.com/in/${process.env.LINKEDIN_PROFILE_ENDPOINT}`;
-    const urlWhatsapp = `https://wa.me/${process.env.PERSONAL_WHATSAPP}`;
-    const urlEmail = `mailto:${process.env.PERSONAL_EMAIL}`;
+    const urlGithub = `https://github.com/${process.env.NEXT_PUBLIC_GITHUB_PROFILE_ENDPOINT}`;
+    const urlLinkedin = `https://www.linkedin.com/in/${process.env.NEXT_PUBLIC_LINKEDIN_PROFILE_ENDPOINT}`;
+    const urlWhatsapp = `https://wa.me/${process.env.NEXT_PUBLIC_PERSONAL_WHATSAPP}`;
+    const urlEmail = `mailto:${process.env.NEXT_PUBLIC_PERSONAL_EMAIL}`;
     const urlFormspree = 'https://formspree.io/f/' + process.env.NEXT_PUBLIC_FORMSPREE_API_KEY;
 
     const showNotification = (message: string, type: "success" | "error") => {

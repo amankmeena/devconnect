@@ -4,9 +4,9 @@ import ImageWithFallback from "./ImageWithFallback";
 
 export default function Navbar() {
 
-  const urlGithub = `https://github.com/${process.env.GITHUB_PROFILE_ENDPOINT}`;
-  const urlLinkedin = `https://www.linkedin.com/in/${process.env.LINKEDIN_PROFILE_ENDPOINT}`;
-  const urlWhatsapp = `https://wa.me/${process.env.PERSONAL_WHATSAPP}`;
+  const urlGithub = `https://github.com/${process.env.NEXT_PUBLIC_GITHUB_PROFILE_ENDPOINT}`;
+  const urlLinkedin = `https://www.linkedin.com/in/${process.env.NEXT_PUBLIC_LINKEDIN_PROFILE_ENDPOINT}`;
+  const urlWhatsapp = `https://wa.me/${process.env.NEXT_PUBLIC_PERSONAL_WHATSAPP}`;
 
   return (
     /* Navbar */

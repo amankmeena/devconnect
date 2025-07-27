@@ -9,6 +9,8 @@ import ImageWithFallback from "@/components/ImageWithFallback";
 
 export default function Projects() {
 
+  const urlGithub = `https://github.com/${process.env.NEXT_PUBLIC_GITHUB_PROFILE_ENDPOINT}`;
+
   return (
     <>
       <section className="hero relative bg-cover bg-center text-white text-center py-[60px] px-5 pb-[40px] bg-dark border-b border-border bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80')]" >
@@ -16,7 +18,7 @@ export default function Projects() {
         <div className="relative z-5 p-10">
           <h1 className="text-5xl font-bold mb-4 text-white">Innovate, Build, Deliver.</h1>
           <p className="text-muted text-body mb-7 max-w-[540px] mx-auto">Showcasing a passion for crafting impactful software solutions that blend innovative design with robust engineering. Explore a diverse portfolio of projects.</p>
-          <button className="bg-accent text-white border-0 py-[14px] px-[36px] rounded-[8px] font-bold text-body cursor-pointer transition-colors duration-200 hover:bg-hover primary-btn" >View My Projects</button>
+          <Link className="bg-accent text-white border-0 py-[14px] px-[36px] rounded-[8px] font-bold text-body cursor-pointer transition-colors duration-200 hover:bg-hover primary-btn" href={urlGithub} target="_blank" rel="noopener noreferrer" >View My Projects</Link>
         </div>
       </section>
       <section className="py-[48px] px-5 max-w-[1200px] mx-auto section">
