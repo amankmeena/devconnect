@@ -46,7 +46,7 @@ export default async function ProjectPage({ params }: PageProps) {
                         <ImageWithFallback
                             src={image}
                             fallbackSrc="/not-found.jpeg"
-                            className="w-full rounded-(--radius) shadow-(--shadow) mb-0 object-cover bg-(--icon-bg) aspect-video main-image"
+                            className="w-full rounded-(--radius) shadow-(--shadow) mb-0 object-contain bg-(--icon-bg) aspect-video main-image"
                             alt={alt}
                         />
                         <div className="bg-card rounded-(--radius) p-6 shadow-(--shadow) border border-border mb-0 project-card">
@@ -123,7 +123,7 @@ export default async function ProjectPage({ params }: PageProps) {
                         </div>
                         <div className="bg-card rounded-[14px] p-5 shadow-(--shadow) border border-border min-h-[120px] mb-0 screenshots-card">
                             <h3 className="mt-0 text-h3 font-bold mb-3">Additional Screenshots</h3>
-                            {(data.additionalScreenshots.length > 0) ?
+                            {data.additionalScreenshots ?
                                 (data.additionalScreenshots.map((image, idx) => (
                                     // <img key={idx} src={image} alt="adds photo" />
                                     <ImageWithFallback

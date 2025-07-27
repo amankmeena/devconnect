@@ -8,14 +8,15 @@ import projects from "@/components/projects";
 import ImageWithFallback from "@/components/ImageWithFallback";
 
 export default function Projects() {
+
   return (
     <>
-      <section className="hero relative bg-cover bg-center text-white text-center py-[60px] px-5 pb-[40px] bg-dark border-b border-border bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80')] bg-cover bg-center" >
+      <section className="hero relative bg-cover bg-center text-white text-center py-[60px] px-5 pb-[40px] bg-dark border-b border-border bg-[url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80')]" >
         <div className="absolute inset-0 bg-black/60"></div> {/* <-- Overlay */}
         <div className="relative z-5 p-10">
           <h1 className="text-5xl font-bold mb-4 text-white">Innovate, Build, Deliver.</h1>
           <p className="text-muted text-body mb-7 max-w-[540px] mx-auto">Showcasing a passion for crafting impactful software solutions that blend innovative design with robust engineering. Explore a diverse portfolio of projects.</p>
-          <button className="bg-accent text-white border-0 py-[14px] px-[36px] rounded-[8px] font-bold text-body cursor-pointer transition-colors duration-200 hover:bg-hover primary-btn">View My Projects</button>
+          <button className="bg-accent text-white border-0 py-[14px] px-[36px] rounded-[8px] font-bold text-body cursor-pointer transition-colors duration-200 hover:bg-hover primary-btn" >View My Projects</button>
         </div>
       </section>
       <section className="py-[48px] px-5 max-w-[1200px] mx-auto section">
@@ -47,7 +48,7 @@ export default function Projects() {
                 />
                 <div className="py-[18px] px-4 pb-4 flex-1 flex flex-col card-content">
                   <div className="text-h3 font-bold mb-2 text-white card-title">{project.title}</div>
-                  <div className="text-muted text-body mb-4 flex-1 card-desc">{project.description}</div>
+                  <div className="text-muted text-body mb-4 flex-1 card-desc multi-ellipsis">{project.description}</div>
                   <div className="flex flex-wrap gap-2 mb-3 project-tags">
                     {
                       project.tags.slice(0, 3).map((tag, id) => (

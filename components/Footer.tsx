@@ -2,6 +2,11 @@ import Link from "next/link";
 import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
+
+  const urlGithub = `https://github.com/${process.env.GITHUB_PROFILE_ENDPOINT}`;
+  const urlLinkedin = `https://www.linkedin.com/in/${process.env.LINKEDIN_PROFILE_ENDPOINT}`;
+  const urlEmail = `mailto:${process.env.PERSONAL_EMAIL}`;
+
   return (
     /* Footer */
     < footer className="bg-dark border-t border-border py-10 pb-5 mt-12" id="contact" >
@@ -22,13 +27,13 @@ export default function Footer() {
 
         {/* Social Icons */}
         <div className="flex gap-4 text-body">
-          <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-hover transition">
+          <Link href={urlGithub} target="_blank" rel="noopener noreferrer" className="hover:text-hover transition">
             <FaGithub />
           </Link>
-          <Link href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="hover:text-hover transition">
+          <Link href={urlLinkedin} target="_blank" rel="noopener noreferrer" className="hover:text-hover transition">
             <FaLinkedin />
           </Link>
-          <Link href="mailto:you@example.com" className="hover:text-hover transition">
+          <Link href={urlEmail} className="hover:text-hover transition">
             <FaEnvelope />
           </Link>
         </div>

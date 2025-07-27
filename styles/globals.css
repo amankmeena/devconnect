@@ -34,6 +34,14 @@
   box-sizing: border-box;
 }
 
+.multi-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines before cutting off */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-clamp: 3;
+}
+
 @layer utilities {
   .line-clamp-3 {
     display: -webkit-box;
