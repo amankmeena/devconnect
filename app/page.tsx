@@ -85,7 +85,7 @@ export default function Home() {
           <div className="text-muted text-center mb-10 text-body">
             Discover a selection of my recent work, showcasing diverse skills and successful outcomes.
           </div>
-          <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-6 mb-10">
+          <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-6 mb-10">
             {
               projects.slice(0, 6).map((project, idx) => (
                 <div key={idx} className="bg-card rounded-xl overflow-hidden flex flex-col min-h-[320px] project-card">

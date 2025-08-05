@@ -79,7 +79,7 @@ export default async function BlogPage({ params }: PageProps) {
                             ))
                         }
                     </div>
-                    <aside className="toc-container bg-(--icon-bg) border border-solid border-border rounded-[11px] p-4.5 pb-2.5 min-w-[200px] max-w-[260px] mb-4.5 ml-6 text-body text-white shadow-[0_2px_10px_rgba(0,0,0,0.13)] sticky top-50">
+                    <aside className="toc-container bg-(--icon-bg) border border-solid border-border rounded-[11px] p-4.5 pb-2.5 min-w-[200px] max-w-[260px] mb-4.5 ml-6 text-body text-white shadow-[0_2px_10px_rgba(0,0,0,0.13)] sticky top-50 max-sm:hidden">
                         <div className="toc-title font-bold text-h3 mb-2.5 text-white">Table of Contents</div>
                         <ul className="toc-list list-none p-0 m-0 text-muted text-body mb-[15px] ml-6 lh-base">
                             {

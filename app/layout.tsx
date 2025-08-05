@@ -25,6 +25,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Webfolio by Aman",
   description: "Aman Meena's portfolio built with Next.js and TypeScript. Includes projects, blog, and contact form.",
+  icons: {
+    icon: '/android-chrome-192x192.png',
+    shortcut: '/android-chrome-192x192.png',
+    apple: '/apple-touch-icon.png',
+  }
 };
 
 export default function RootLayout({

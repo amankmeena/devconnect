@@ -40,7 +40,7 @@ export default async function ProjectPage({ params }: PageProps) {
                         <Link href={gitLink} target="_blank" rel="noopener noreferrer" className="bg-card text-accent border-2 border-accent text-body font-semibold py-2.5 px-5 rounded-md cursor-pointer transition-colors duration-200 hover:bg-hover hover:text-white secondary-btn">View Code on GitHub</Link>
                     </div>
                 </div>
-                <div className="grid grid-cols-[1.8fr_1fr] gap-7 mt-2 content-grid">
+                <div className="grid md:grid-cols-[1.8fr_1fr] gap-7 mt-2 content-grid">
                     <div className="flex flex-col gap-7 left-col">
                         {/* <img className="w-full rounded-(--radius) shadow-(--shadow) mb-0 object-cover bg-(--icon-bg) aspect-video main-image" src={image} alt={alt} /> */}
                         <ImageWithFallback
